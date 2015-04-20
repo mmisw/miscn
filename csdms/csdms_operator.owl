@@ -1,0 +1,367 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:omv="http://omv.ontoware.org/2005/05/ontology#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:omvmmi="http://mmisw.org/ont/mmi/20081020/ontologyMetadata/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns="http://mmisw.org/ont/csdms/operator/"
+    xml:base="http://mmisw.org/ont/csdms/operator" >
+    <owl:Ontology rdf:about="">
+        <omvmmi:contactRole>content manager</omvmmi:contactRole>
+        <omvmmi:hasResourceType>constraint</omvmmi:hasResourceType>
+        <dc:source>http://www.isi.edu/ikcap/geosoft/ontology/CSDMS.owl</dc:source>
+        <omv:hasContributor>Scott D. Peckham</omv:hasContributor>
+        <omvmmi:origVocDocumentationUri>http://csdms.colorado.edu/wiki/CSDMS_Standard_Names</omvmmi:origVocDocumentationUri>
+        <omv:name>CSDMS Operator Terms</omv:name>
+        <omv:acronym>csdms-operator</omv:acronym>
+        <dc:creator>John Graybeal</dc:creator>
+        <omvmmi:origVocKeywords>CSDMS, standard names, OWL</omvmmi:origVocKeywords>
+        <omvmmi:origVocUri>http://www.isi.edu/ikcap/geosoft/ontology/CSDMS.owl</omvmmi:origVocUri>
+        <omvmmi:origVocManager>Scott D. Peckham</omvmmi:origVocManager>
+        <omvmmi:creditCitation></omvmmi:creditCitation>
+        <omvmmi:origVocDescriptiveName>CSDMS Standard Names OWL representation</omvmmi:origVocDescriptiveName>
+        <dc:date>2015-01-29T00:09:34+0000</dc:date>
+        <omvmmi:origMaintainerCode>csdms</omvmmi:origMaintainerCode>
+        <dc:description>The Operator (or Operation) terms from the CSDMS project, represented as an OWL resource. An Operation can optionally be given as a prefix to the quantity part of an existing standard name. Operations are applied to the quantity part of the name instead of to the entire name (object + quantity). Applying an operation to a quantity results in a new quantity that frequently has different units than the original quantity. The CSDMS semantic work has a goal of automated semantic mediation, matching or reconciliation. While the focus is on a 'lingua franca', the standard names are often built from a hierarchical set of concepts, and may eventually be used to construct a type of ontology.</dc:description>
+        <omv:description>The Operator (or Operation) terms from the CSDMS project, represented as an OWL resource. An Operation can optionally be given as a prefix to the quantity part of an existing standard name. Operations are applied to the quantity part of the name instead of to the entire name (object + quantity). Applying an operation to a quantity results in a new quantity that frequently has different units than the original quantity. The CSDMS semantic work has a goal of automated semantic mediation, matching or reconciliation. While the focus is on a 'lingua franca', the standard names are often built from a hierarchical set of concepts, and may eventually be used to construct a type of ontology.</omv:description>
+        <omv:keywords>standard names, csdms, operator</omv:keywords>
+        <omvmmi:contact>Scott Peckham (scott.d.peckham@gmail.com)</omvmmi:contact>
+        <omv:uri>http://mmisw.org/ont/csdms/operator</omv:uri>
+        <omvmmi:origVocVersionId>0.8.1</omvmmi:origVocVersionId>
+        <omvmmi:creditRequired></omvmmi:creditRequired>
+        <dc:contributor>John Graybeal (jbgraybeal@mindspring.com), Scott Peckham (scott.d.peckham@gmail.com)</dc:contributor>
+        <omv:reference>http://csdms.colorado.edu/mediawiki/images/Peckham_2014_iEMSs.pdf</omv:reference>
+        <omv:version>20150212T213257</omv:version>
+        <omvmmi:hasContentCreator>Scott D. Peckham</omvmmi:hasContentCreator>
+        <omvmmi:origVocSyntaxFormat>OWL</omvmmi:origVocSyntaxFormat>
+        <omvmmi:temporaryMmiRole>ontology creator</omvmmi:temporaryMmiRole>
+        <omv:creationDate>2015-04-15T23:56:42+0000</omv:creationDate>
+        <omv:hasCreator>Scott Peckham</omv:hasCreator>
+        <omv:documentation>http://csdms.colorado.edu/wiki/CSDMS_Standard_Names</omv:documentation>
+    </owl:Ontology>
+
+    <owl:Class rdf:about="http://mmisw.org/ont/csdms/operator/Operator">
+        <rdfs:label>operator</rdfs:label>
+        <rdfs:comment>The operator part of a CSDMS object name.</rdfs:comment>
+    </owl:Class>
+
+    <!-- Operators -->
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/reduction">
+		<rdfs:label>reduction</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/anomaly">
+		<rdfs:label>anomaly</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/azimuth_angle">
+		<rdfs:label>azimuth_angle</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/gradient">
+		<rdfs:label>gradient</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/east_derivative">
+		<rdfs:label>east_derivative</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/elevation_angle">
+		<rdfs:label>elevation_angle</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/increment">
+		<rdfs:label>increment</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/magnitude">
+		<rdfs:label>magnitude</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/north_derivative">
+		<rdfs:label>north_derivative</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/x_derivative">
+		<rdfs:label>x_derivative</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/y_derivative">
+		<rdfs:label>y_derivative</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/z_derivative">
+		<rdfs:label>z_derivative</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/curl">
+		<rdfs:label>curl</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/east_component">
+		<rdfs:label>east_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/east_east_component">
+		<rdfs:label>east_east_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/east_north_component">
+		<rdfs:label>east_north_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/east_up_component">
+		<rdfs:label>east_up_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/north_component">
+		<rdfs:label>north_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/north_north_component">
+		<rdfs:label>north_north_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/north_up_component">
+		<rdfs:label>north_up_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/time_derivative">
+		<rdfs:label>time_derivative</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/up_component">
+		<rdfs:label>up_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/up_up_component">
+		<rdfs:label>up_up_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/x_component">
+		<rdfs:label>x_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/x_x_component">
+		<rdfs:label>x_x_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/x_y_component">
+		<rdfs:label>x_y_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/x_z_component">
+		<rdfs:label>x_z_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/y_component">
+		<rdfs:label>y_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/y_y_component">
+		<rdfs:label>y_y_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/y_z_component">
+		<rdfs:label>y_z_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/z_component">
+		<rdfs:label>z_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/z_integral">
+		<rdfs:label>z_integral</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/u_component">
+		<rdfs:label>u_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/v_component">
+		<rdfs:label>v_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/z_z_component">
+		<rdfs:label>z_z_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/domain_time_integral">
+		<rdfs:label>domain_time_integral</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/domain_time_max">
+		<rdfs:label>domain_time_max</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/geologic_time_average">
+		<rdfs:label>geologic_time_average</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/globe_time_average">
+		<rdfs:label>globe_time_average</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/one-day_time_integral">
+		<rdfs:label>one-day_time_integral</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/one-hour_time_integral">
+		<rdfs:label>one-hour_time_integral</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/one-month_time_integral">
+		<rdfs:label>one-month_time_integral</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/one-year_time_integral">
+		<rdfs:label>one-year_time_integral</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/max">
+		<rdfs:label>max</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/mean">
+		<rdfs:label>mean</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/min">
+		<rdfs:label>min</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/range">
+		<rdfs:label>range</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/sqrt">
+		<rdfs:label>sqrt</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/half">
+		<rdfs:label>half</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/peak_time">
+		<rdfs:label>peak_time</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/time_integral">
+		<rdfs:label>time_integral</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/time_max">
+		<rdfs:label>time_max</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/time_min">
+		<rdfs:label>time_min</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/antigradient">
+		<rdfs:label>antigradient</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/cross-stream_derivative">
+		<rdfs:label>cross-stream_derivative</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/downstream_derivative">
+		<rdfs:label>downstream_derivative</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/domain_max">
+		<rdfs:label>domain_max</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/domain_min">
+		<rdfs:label>domain_min</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/difference">
+		<rdfs:label>difference</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/time">
+		<rdfs:label>time</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/cross-stream_component">
+		<rdfs:label>cross-stream_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/downstream_component">
+		<rdfs:label>downstream_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/loss">
+		<rdfs:label>loss</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/inverse">
+		<rdfs:label>inverse</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/down_z_derivative">
+		<rdfs:label>down_z_derivative</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/drop">
+		<rdfs:label>drop</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/south_east_component">
+		<rdfs:label>south_east_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/south_south_component">
+		<rdfs:label>south_south_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/up_south_component">
+		<rdfs:label>up_south_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/down_component">
+		<rdfs:label>down_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/east_down_component">
+		<rdfs:label>east_down_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/north_down_component">
+		<rdfs:label>north_down_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/change_from_annual_min">
+		<rdfs:label>change_from_annual_min</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/depression">
+		<rdfs:label>depression</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/down_derivative">
+		<rdfs:label>down_derivative</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/south_component">
+		<rdfs:label>south_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/west_component">
+		<rdfs:label>west_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/mid-range">
+		<rdfs:label>mid-range</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/lower_limit">
+		<rdfs:label>lower_limit</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/upper_limit">
+		<rdfs:label>upper_limit</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/domain_range">
+		<rdfs:label>domain_range</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/domain_time_min">
+		<rdfs:label>domain_time_min</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/laplacian">
+		<rdfs:label>laplacian</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/x_x_derivative">
+		<rdfs:label>x_x_derivative</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/x_y_derivative">
+		<rdfs:label>x_y_derivative</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/y_y_derivative">
+		<rdfs:label>y_y_derivative</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/annual_time_max">
+		<rdfs:label>annual_time_max</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/normal_component">
+		<rdfs:label>normal_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/left_normal">
+		<rdfs:label>left_normal</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/time_integral_from_start">
+		<rdfs:label>time_integral_from_start</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/cos">
+		<rdfs:label>cos</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/time_mean">
+		<rdfs:label>time_mean</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/time_median">
+		<rdfs:label>time_median</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/time_average">
+		<rdfs:label>time_average</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/square">
+		<rdfs:label>square</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/down_east_component">
+		<rdfs:label>down_east_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/down_north_component">
+		<rdfs:label>down_north_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/up_derivative">
+		<rdfs:label>up_derivative</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/z_x_component">
+		<rdfs:label>z_x_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/z_y_component">
+		<rdfs:label>z_y_component</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/threshold">
+		<rdfs:label>threshold</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/diurnal_max">
+		<rdfs:label>diurnal_max</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/diurnal_min">
+		<rdfs:label>diurnal_min</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/diurnal_range">
+		<rdfs:label>diurnal_range</rdfs:label>
+	</Operator>
+	<Operator rdf:about="http://mmisw.org/ont/csdms/operator/z_mean">
+		<rdfs:label>z_mean</rdfs:label>
+	</Operator>
+</rdf:RDF>

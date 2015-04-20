@@ -1,0 +1,38 @@
+[
+    "output_file_info",
+    {
+        "file_name": "csdms_object.owl"
+    }
+]
+[
+    "header_substitutions",
+    {
+        "xmlns=": "\"http://mmisw.org/ont/csdms/object/\"",
+        "<omv:keywords>standard names, csdms": ", object",
+        "xml:base=": "\"http://mmisw.org/ont/csdms/object\"",
+        "<owl:Class rdf:about=\"": "http://mmisw.org/ont/csdms/object/Object",
+        "<omv:uri>": "http://mmisw.org/ont/csdms/object",
+        "<omvmmi:hasResourceType>": "featureName",
+        "<rdfs:comment>": "The Object part of a CSDMS object name; it is a feature in the sense of OGC 19109.",
+        "<omv:acronym>": "csdms-object",
+        "<dc:description>": "The Object terms from the CSDMS project, represented as an OWL resource. The Object part of the Standard Name is a feature, in the sense of OGC 19109; it is a thing being observed (see http://en.wikipedia.org/wiki/Object_(philosophy) ). The Object is a required part of a CSDMS Standard Name. The CSDMS semantic work has a goal of automated semantic mediation, matching or reconciliation. While the focus is on a 'lingua franca', the standard names are often built from a hierarchical set of concepts, and may eventually be used to construct a type of ontology.",
+        "<rdfs:label>": "object",
+        "<omv:description>": "The Object terms from the CSDMS project, represented as an OWL resource. The Object part of the Standard Name is a feature, in the sense of OGC 19109; it is a thing being observed (see http://en.wikipedia.org/wiki/Object_(philosophy) ). The Object is a required part of a CSDMS Standard Name. The CSDMS semantic work has a goal of automated semantic mediation, matching or reconciliation. While the focus is on a 'lingua franca', the standard names are often built from a hierarchical set of concepts, and may eventually be used to construct a type of ontology.",
+        "<!-- ": "Objects",
+        "<omv:name>": "CSDMS Object Terms"
+    }
+]
+[
+    "limit_tags",
+    {
+        "closeTag": "</geo:Object>",
+        "openTag": "<geo:Object"
+    }
+]
+[
+    "body_substitutions",
+    {
+        "</geo:Object>": "</Object>",
+        "<geo:Object rdf:ID=\"object_": "<Object rdf:about=\"http://mmisw.org/ont/csdms/object/"
+    }
+]

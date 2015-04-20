@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:omv="http://omv.ontoware.org/2005/05/ontology#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:omvmmi="http://mmisw.org/ont/mmi/20081020/ontologyMetadata/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns=
+    xml:base= >
+    <owl:Ontology rdf:about="">
+        <omvmmi:contactRole>content manager</omvmmi:contactRole>
+        <omvmmi:hasResourceType></omvmmi:hasResourceType>
+        <dc:source>http://www.isi.edu/ikcap/geosoft/ontology/CSDMS.owl</dc:source>
+        <omv:hasContributor>Scott D. Peckham</omv:hasContributor>
+        <omvmmi:origVocDocumentationUri>http://csdms.colorado.edu/wiki/CSDMS_Standard_Names</omvmmi:origVocDocumentationUri>
+        <omv:name></omv:name>
+        <omv:acronym></omv:acronym>
+        <dc:creator>John Graybeal</dc:creator>
+        <omvmmi:origVocKeywords>CSDMS, standard names, OWL</omvmmi:origVocKeywords>
+        <omvmmi:origVocUri>http://www.isi.edu/ikcap/geosoft/ontology/CSDMS.owl</omvmmi:origVocUri>
+        <omvmmi:origVocManager>Scott D. Peckham</omvmmi:origVocManager>
+        <omvmmi:creditCitation></omvmmi:creditCitation>
+        <omvmmi:origVocDescriptiveName>CSDMS Standard Names OWL representation</omvmmi:origVocDescriptiveName>
+        <dc:date>2015-01-29T00:09:34+0000</dc:date>
+        <omvmmi:origMaintainerCode>csdms</omvmmi:origMaintainerCode>
+        <dc:description></dc:description>
+        <omv:description></omv:description>
+        <omv:keywords>standard names, csdms</omv:keywords>
+        <omvmmi:contact>Scott Peckham (scott.d.peckham@gmail.com)</omvmmi:contact>
+        <omv:uri></omv:uri>
+        <omvmmi:origVocVersionId>0.8.1</omvmmi:origVocVersionId>
+        <omvmmi:creditRequired></omvmmi:creditRequired>
+        <dc:contributor>John Graybeal (jbgraybeal@mindspring.com), Scott Peckham (scott.d.peckham@gmail.com)</dc:contributor>
+        <omv:reference>http://csdms.colorado.edu/mediawiki/images/Peckham_2014_iEMSs.pdf</omv:reference>
+        <omv:version>20150212T213257</omv:version>
+        <omvmmi:hasContentCreator>Scott D. Peckham</omvmmi:hasContentCreator>
+        <omvmmi:origVocSyntaxFormat>OWL</omvmmi:origVocSyntaxFormat>
+        <omvmmi:temporaryMmiRole>ontology creator</omvmmi:temporaryMmiRole>
+        <omv:creationDate>2015-04-15T23:56:42+0000</omv:creationDate>
+        <omv:hasCreator>Scott Peckham</omv:hasCreator>
+        <omv:documentation>http://csdms.colorado.edu/wiki/CSDMS_Standard_Names</omv:documentation>
+    </owl:Ontology>
+
+    <owl:Class rdf:about="">
+        <rdfs:label></rdfs:label>
+        <rdfs:comment></rdfs:comment>
+    </owl:Class>
+
+    <!--  -->

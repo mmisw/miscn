@@ -1,0 +1,52 @@
+[
+    "output_file_info",
+    {
+        "file_name": "csdms_assumption.owl"
+    }
+]
+[
+    "header_substitutions",
+    {
+        "xmlns=": "\"http://mmisw.org/ont/csdms/assumption/\"",
+        "<omv:keywords>standard names, csdms": ", assumption",
+        "xml:base=": "\"http://mmisw.org/ont/csdms/assumption\"",
+        "<owl:Class rdf:about=\"": "http://mmisw.org/ont/csdms/assumption/Assumption",
+        "<omv:uri>": "http://mmisw.org/ont/csdms/assumption",
+        "<omvmmi:hasResourceType>": "constraint",
+        "<rdfs:comment>": "A CSDMS Assumption: a descriptor used in Model Coupling Metadata files to describe a model's underlying physics",
+        "<omv:acronym>": "csdms-assumption",
+        "<dc:description>": "The Assumption terms from the CSDMS project, represented as an OWL resource. An Assumption is not a  part of a CSDMS Standard Name; rather, it is used to describe a model or its parameters in detail. (Hence, an assumption should not be used to evaluate parameter matches in a simplistic way.) An Assumption is a broad term that can include things like conditions, simplifications, approximations, limitations, conventions, provisos and other forms of clarification. CSDMS encourages model developers to include as many &lt;assume&gt; tags in their Model Coupling Metadata (MCM) file as they feel apply to their model or its particular input or output variable; XML tag nesting determines the scope of an &lt;assume&gt; tag. The CSDMS semantic work has a goal of automated semantic mediation, matching or reconciliation. While the focus is on a 'lingua franca', the standard names are often built from a hierarchical set of concepts, and may eventually be used to construct a type of ontology.",
+        "<rdfs:label>": "assumption",
+        "<omv:description>": "The Assumption terms from the CSDMS project, represented as an OWL resource. An Assumption is not a  part of a CSDMS Standard Name; rather, it is used to describe a model or its parameters in detail. (Hence, an assumption should not be used to evaluate parameter matches in a simplistic way.) An Assumption is a broad term that can include things like conditions, simplifications, approximations, limitations, conventions, provisos and other forms of clarification. CSDMS encourages model developers to include as many &lt;assume&gt; tags in their Model Coupling Metadata (MCM) file as they feel apply to their model or its particular input or output variable; XML tag nesting determines the scope of an &lt;assume&gt; tag. The CSDMS semantic work has a goal of automated semantic mediation, matching or reconciliation. While the focus is on a 'lingua franca', the standard names are often built from a hierarchical set of concepts, and may eventually be used to construct a type of ontology.",
+        "<!-- ": "Assumption Types",
+        "<omv:name>": "CSDMS Assumption Terms"
+    }
+]
+[
+    "limit_tags",
+    {
+        "openTag": ["<owl:Class", "<!-- Assumptions -->","<BoundaryCondition","<ConservedQuantity","<CoordinateSystems",
+                    "<Georeferencing","<SignandAngleConventions","<Dimensionality","<EquationsLawsandPrinciples",
+                    "<Inequalities","<Identities","<Approximations","<FlowType","<FluidType","<MaterialType",
+                    "<FunctionType","<Geometric","<Exclusions","<NamedModelTypebyDomain","<ThermodynamicProcess",
+                    "<StochasticModel","<ProbabilityDistributions","<StatisticalOperation","<Mathematical",
+                    "<NumericalGrid","<NumericalMethod","<StateofMatter","<SystemState","<CFConventionStandardName"
+                    ],
+        "closeTag": ["</owl:Class>", "<!-- Assumptions -->", "</BoundaryCondition","</ConservedQuantity","</CoordinateSystems",
+                    "</Georeferencing","</SignandAngleConventions","</Dimensionality","</EquationsLawsandPrinciples",
+                    "</Inequalities","</Identities","</Approximations","</FlowType","</FluidType","</MaterialType",
+                    "</FunctionType","</Geometric","</Exclusions","</NamedModelTypebyDomain",
+                    "</ThermodynamicProcess","</StochasticModel","</ProbabilityDistributions",
+                    "</StatisticalOperation","</Mathematical","</NumericalGrid","</NumericalMethod",
+                    "</StateofMatter","</SystemState","</CFConventionStandardName"
+                    ]
+    }
+]
+[
+    "body_substitutions",
+    {
+        "rdf:ID=\"": "rdf:about=\"http://mmisw.org/ont/csdms/assumption/",
+        "subClassOf rdf:resource=\"&geo;": "subClassOf rdf:resource=\"",
+        "<!-- Assumptions -->": "\r    <!-- Assumptions -->"
+    }
+]
