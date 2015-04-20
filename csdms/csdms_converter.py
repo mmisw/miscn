@@ -4,7 +4,7 @@ from datetime import datetime
 import json
 import os.path
 
-defaultCfgFileName = 'csdms_operator_cfg.json'
+defaultCfgFileName = 'csdms_assumption_cfg.json'
 
 cfgFileName = argv[1]
 if not(os.path.isfile(cfgFileName)):
@@ -51,7 +51,7 @@ template = open('template_hdr.owl')
 headerLinesReplaced = 0
 for line in template:
     for attributePattern, attributeValue in header_substitutions.items():
-        if line.find(attributePattern)>=0:
+        if attributePattern in line:
             line = line.replace(attributePattern, attributePattern+attributeValue)
             headerLinesReplaced += 1
             # print "Replaced line with %s" % attributePattern
@@ -66,13 +66,15 @@ replaceTagCount = 0
 printOn = False
 lastLine = False
 for line in stdnames:
-    if line.find(limit_tags['openTag'])>=0:
-        printOn = True
-    elif line.find(limit_tags['closeTag'])>=0:
-        lastLine = True
+    for tagItem in limit_tags['openTag']:
+        if tagItem in line:
+            printOn = True
+    for tagItem in limit_tags['closeTag']:
+        if tagItem in line:
+            lastLine = True
     # ont_out.write(line + "PrintOn/LastLine = %r, %r" % (printOn, lastLine) )
     for tagPattern, tagReplace in body_substitutions.items():
-        if line.find(tagPattern)>=0:
+        if tagPattern in line:
             line = line.replace(tagPattern, tagReplace)
             replaceTagCount += 1
     if printOn:
