@@ -1,0 +1,38 @@
+[
+    "output_file_info",
+    {
+        "file_name": "csdms_quantity.owl"
+    }
+]
+[
+    "header_substitutions",
+    {
+        "xmlns=": "\"http://mmisw.org/ont/csdms/quantity/\"",
+        "<omv:keywords>standard names, csdms": ", quantity",
+        "xml:base=": "\"http://mmisw.org/ont/csdms/quantity\"",
+        "<owl:Class rdf:about=\"": "http://mmisw.org/ont/csdms/quantity/Quantity",
+        "<omv:uri>": "http://mmisw.org/ont/csdms/quantity",
+        "<omvmmi:hasResourceType>": "quantity",
+        "<rdfs:comment>": "The quantity part of a CSDMS object name.",
+        "<omv:acronym>": "csdms-quantity",
+        "<dc:description>": "The Quantity terms from the CSDMS project, represented as an OWL resource. The Quantity is a required part of a CSDMS Standard Name. The Quantity part of the Standard Name is an attribute of a thing representing the thing's magnitude or multidude (see http://en.wikipedia.org/wiki/Quantity). The Quantity has units, possibly dimensionless units like m/m. The CSDMS semantic work has a goal of automated semantic mediation, matching or reconciliation. While the focus is on a 'lingua franca', the standard names are often built from a hierarchical set of concepts, and may eventually be used to construct a type of ontology.",
+        "<rdfs:label>": "quantity",
+        "<omv:description>": "The Quantity terms from the CSDMS project, represented as an OWL resource. The Quantity is a required part of a CSDMS Standard Name. The Quantity part of the Standard Name is an attribute of a thing representing the thing's magnitude or multidude (see http://en.wikipedia.org/wiki/Quantity). The Quantity has units, possibly dimensionless units like m/m. The CSDMS semantic work has a goal of automated semantic mediation, matching or reconciliation. While the focus is on a 'lingua franca', the standard names are often built from a hierarchical set of concepts, and may eventually be used to construct a type of ontology.",
+        "<!-- ": "Quantities",
+        "<omv:name>": "CSDMS Quantity Terms"
+    }
+]
+[
+    "limit_tags",
+    {
+        "closeTag": "</geo:Quantity>",
+        "openTag": "<geo:Quantity"
+    }
+]
+[
+    "body_substitutions",
+    {
+        "</geo:Quantity>": "</Quantity>",
+        "<geo:Quantity rdf:ID=\"quantity_": "<Quantity rdf:about=\"http://mmisw.org/ont/csdms/quantity/"
+    }
+]

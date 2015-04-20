@@ -1,0 +1,2338 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:omv="http://omv.ontoware.org/2005/05/ontology#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:omvmmi="http://mmisw.org/ont/mmi/20081020/ontologyMetadata/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns="http://mmisw.org/ont/csdms/quantity/"
+    xml:base="http://mmisw.org/ont/csdms/quantity" >
+    <owl:Ontology rdf:about="">
+        <omvmmi:contactRole>content manager</omvmmi:contactRole>
+        <omvmmi:hasResourceType>quantity</omvmmi:hasResourceType>
+        <dc:source>http://www.isi.edu/ikcap/geosoft/ontology/CSDMS.owl</dc:source>
+        <omv:hasContributor>Scott D. Peckham</omv:hasContributor>
+        <omvmmi:origVocDocumentationUri>http://csdms.colorado.edu/wiki/CSDMS_Standard_Names</omvmmi:origVocDocumentationUri>
+        <omv:name>CSDMS Quantity Terms</omv:name>
+        <omv:acronym>csdms-quantity</omv:acronym>
+        <dc:creator>John Graybeal</dc:creator>
+        <omvmmi:origVocKeywords>CSDMS, standard names, OWL</omvmmi:origVocKeywords>
+        <omvmmi:origVocUri>http://www.isi.edu/ikcap/geosoft/ontology/CSDMS.owl</omvmmi:origVocUri>
+        <omvmmi:origVocManager>Scott D. Peckham</omvmmi:origVocManager>
+        <omvmmi:creditCitation></omvmmi:creditCitation>
+        <omvmmi:origVocDescriptiveName>CSDMS Standard Names OWL representation</omvmmi:origVocDescriptiveName>
+        <dc:date>2015-01-29T00:09:34+0000</dc:date>
+        <omvmmi:origMaintainerCode>csdms</omvmmi:origMaintainerCode>
+        <dc:description>The Quantity terms from the CSDMS project, represented as an OWL resource. The Quantity is a required part of a CSDMS Standard Name. The Quantity part of the Standard Name is an attribute of a thing representing the thing's magnitude or multidude (see http://en.wikipedia.org/wiki/Quantity). The Quantity has units, possibly dimensionless units like m/m. The CSDMS semantic work has a goal of automated semantic mediation, matching or reconciliation. While the focus is on a 'lingua franca', the standard names are often built from a hierarchical set of concepts, and may eventually be used to construct a type of ontology.</dc:description>
+        <omv:description>The Quantity terms from the CSDMS project, represented as an OWL resource. The Quantity is a required part of a CSDMS Standard Name. The Quantity part of the Standard Name is an attribute of a thing representing the thing's magnitude or multidude (see http://en.wikipedia.org/wiki/Quantity). The Quantity has units, possibly dimensionless units like m/m. The CSDMS semantic work has a goal of automated semantic mediation, matching or reconciliation. While the focus is on a 'lingua franca', the standard names are often built from a hierarchical set of concepts, and may eventually be used to construct a type of ontology.</omv:description>
+        <omv:keywords>standard names, csdms, quantity</omv:keywords>
+        <omvmmi:contact>Scott Peckham (scott.d.peckham@gmail.com)</omvmmi:contact>
+        <omv:uri>http://mmisw.org/ont/csdms/quantity</omv:uri>
+        <omvmmi:origVocVersionId>0.8.1</omvmmi:origVocVersionId>
+        <omvmmi:creditRequired></omvmmi:creditRequired>
+        <dc:contributor>John Graybeal (jbgraybeal@mindspring.com), Scott Peckham (scott.d.peckham@gmail.com)</dc:contributor>
+        <omv:reference>http://csdms.colorado.edu/mediawiki/images/Peckham_2014_iEMSs.pdf</omv:reference>
+        <omv:version>20150212T213257</omv:version>
+        <omvmmi:hasContentCreator>Scott D. Peckham</omvmmi:hasContentCreator>
+        <omvmmi:origVocSyntaxFormat>OWL</omvmmi:origVocSyntaxFormat>
+        <omvmmi:temporaryMmiRole>ontology creator</omvmmi:temporaryMmiRole>
+        <omv:creationDate>2015-04-15T23:56:42+0000</omv:creationDate>
+        <omv:hasCreator>Scott Peckham</omv:hasCreator>
+        <omv:documentation>http://csdms.colorado.edu/wiki/CSDMS_Standard_Names</omv:documentation>
+    </owl:Ontology>
+
+    <owl:Class rdf:about="http://mmisw.org/ont/csdms/quantity/Quantity">
+        <rdfs:label>quantity</rdfs:label>
+        <rdfs:comment>The quantity part of a CSDMS object name.</rdfs:comment>
+    </owl:Class>
+
+    <!-- Quantities -->
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/dielectric_constant">
+		<rdfs:label>dielectric_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/dynamic_shear_viscosity">
+		<rdfs:label>dynamic_shear_viscosity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/dynamic_volume_viscosity">
+		<rdfs:label>dynamic_volume_viscosity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/kinematic_shear_viscosity">
+		<rdfs:label>kinematic_shear_viscosity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/kinematic_volume_viscosity">
+		<rdfs:label>kinematic_volume_viscosity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/volume-specific_isochoric_heat_capacity">
+		<rdfs:label>volume-specific_isochoric_heat_capacity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/richardson_number">
+		<rdfs:label>richardson_number</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/speed">
+		<rdfs:label>speed</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/dew_point_temperature">
+		<rdfs:label>dew_point_temperature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/saturated_partial_pressure">
+		<rdfs:label>saturated_partial_pressure</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/flight_duration">
+		<rdfs:label>flight_duration</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/drag_coefficient">
+		<rdfs:label>drag_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/lift_coefficient">
+		<rdfs:label>lift_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/circulation">
+		<rdfs:label>circulation</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/altitude">
+		<rdfs:label>altitude</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mach_number">
+		<rdfs:label>mach_number</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/span">
+		<rdfs:label>span</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mass-specific_gas_constant">
+		<rdfs:label>mass-specific_gas_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/gas_constant_ratio">
+		<rdfs:label>gas_constant_ratio</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mass-specific_isobaric_heat_capacity">
+		<rdfs:label>mass-specific_isobaric_heat_capacity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/isobaric_heat_capacity">
+		<rdfs:label>isobaric_heat_capacity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/voltage">
+		<rdfs:label>voltage</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/transmittance">
+		<rdfs:label>transmittance</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/absorbed_energy_flux">
+		<rdfs:label>absorbed_energy_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/absorptance">
+		<rdfs:label>absorptance</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/reflectance">
+		<rdfs:label>reflectance</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/reflected_energy_flux">
+		<rdfs:label>reflected_energy_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/transmitted_energy_flux">
+		<rdfs:label>transmitted_energy_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/emittance">
+		<rdfs:label>emittance</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/energy_flux">
+		<rdfs:label>energy_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mass-per-area_density">
+		<rdfs:label>mass-per-area_density</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/liquid-equivalent_depth">
+		<rdfs:label>liquid-equivalent_depth</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/pressure">
+		<rdfs:label>pressure</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/temperature">
+		<rdfs:label>temperature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/convective_available_potential_energy">
+		<rdfs:label>convective_available_potential_energy</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/equivalent_potential_temperature">
+		<rdfs:label>equivalent_potential_temperature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/equivalent_temperature">
+		<rdfs:label>equivalent_temperature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/heat_capacity_ratio">
+		<rdfs:label>heat_capacity_ratio</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/isentropic_compressibility">
+		<rdfs:label>isentropic_compressibility</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/isothermal_compressibility">
+		<rdfs:label>isothermal_compressibility</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mass-per-volume_density">
+		<rdfs:label>mass-per-volume_density</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mass-specific_isochoric_heat_capacity">
+		<rdfs:label>mass-specific_isochoric_heat_capacity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/potential_temperature">
+		<rdfs:label>potential_temperature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/static_pressure">
+		<rdfs:label>static_pressure</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/static_pressure_environmental_lapse_rate">
+		<rdfs:label>static_pressure_environmental_lapse_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/temperature_dry_adiabatic_lapse_rate">
+		<rdfs:label>temperature_dry_adiabatic_lapse_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/temperature_environmental_lapse_rate">
+		<rdfs:label>temperature_environmental_lapse_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/temperature_lapse_rate">
+		<rdfs:label>temperature_lapse_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/temperature_saturated_adiabatic_lapse_rate">
+		<rdfs:label>temperature_saturated_adiabatic_lapse_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/thermal_conductivity">
+		<rdfs:label>thermal_conductivity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/thermal_diffusivity">
+		<rdfs:label>thermal_diffusivity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/thermal_inertia">
+		<rdfs:label>thermal_inertia</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/thermal_resistivity">
+		<rdfs:label>thermal_resistivity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/volume-specific_isobaric_heat_capacity">
+		<rdfs:label>volume-specific_isobaric_heat_capacity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/equilibrium_partial_pressure">
+		<rdfs:label>equilibrium_partial_pressure</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/partial_pressure">
+		<rdfs:label>partial_pressure</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/relative_saturation">
+		<rdfs:label>relative_saturation</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/bolus_velocity">
+		<rdfs:label>bolus_velocity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/potential_vorticity">
+		<rdfs:label>potential_vorticity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/momentum">
+		<rdfs:label>momentum</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/velocity">
+		<rdfs:label>velocity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/vorticity">
+		<rdfs:label>vorticity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/dynamic_pressure">
+		<rdfs:label>dynamic_pressure</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/reynolds_stress">
+		<rdfs:label>reynolds_stress</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/stress">
+		<rdfs:label>stress</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/bolus_vorticity">
+		<rdfs:label>bolus_vorticity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/obukhov_length">
+		<rdfs:label>obukhov_length</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/total_pressure">
+		<rdfs:label>total_pressure</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mass_concentration">
+		<rdfs:label>mass_concentration</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/volume_concentration">
+		<rdfs:label>volume_concentration</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/beer_lambert_law_attenuation_coefficient">
+		<rdfs:label>beer_lambert_law_attenuation_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/standard_refraction_index">
+		<rdfs:label>standard_refraction_index</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/length">
+		<rdfs:label>length</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/energy_intensity">
+		<rdfs:label>energy_intensity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/bubble_point_temperature">
+		<rdfs:label>bubble_point_temperature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/frost_point_temperature">
+		<rdfs:label>frost_point_temperature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mixing_ratio">
+		<rdfs:label>mixing_ratio</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/psychrometric_constant">
+		<rdfs:label>psychrometric_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/virtual_potential_temperature">
+		<rdfs:label>virtual_potential_temperature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/virtual_temperature">
+		<rdfs:label>virtual_temperature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/fall_speed">
+		<rdfs:label>fall_speed</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/terminal_fall_speed">
+		<rdfs:label>terminal_fall_speed</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/brutsaert_emissivity_canopy_factor">
+		<rdfs:label>brutsaert_emissivity_canopy_factor</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/brutsaert_emissivity_cloud_factor">
+		<rdfs:label>brutsaert_emissivity_cloud_factor</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/bulk_latent_heat_aerodynamic_conductance">
+		<rdfs:label>bulk_latent_heat_aerodynamic_conductance</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/bulk_latent_heat_transfer_coefficient">
+		<rdfs:label>bulk_latent_heat_transfer_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/bulk_momentum_aerodynamic_conductance">
+		<rdfs:label>bulk_momentum_aerodynamic_conductance</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/bulk_momentum_transfer_coefficient">
+		<rdfs:label>bulk_momentum_transfer_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/bulk_sensible_heat_aerodynamic_conductance">
+		<rdfs:label>bulk_sensible_heat_aerodynamic_conductance</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/bulk_sensible_heat_transfer_coefficient">
+		<rdfs:label>bulk_sensible_heat_transfer_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/emissivity">
+		<rdfs:label>emissivity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/neutral_bulk_latent_heat_transfer_coefficient">
+		<rdfs:label>neutral_bulk_latent_heat_transfer_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/neutral_bulk_momentum_transfer_coefficient">
+		<rdfs:label>neutral_bulk_momentum_transfer_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/neutral_bulk_sensible_heat_transfer_coefficient">
+		<rdfs:label>neutral_bulk_sensible_heat_transfer_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/bulk_richardson_number">
+		<rdfs:label>bulk_richardson_number</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/flux_richardson_number">
+		<rdfs:label>flux_richardson_number</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/gradient_richardson_number">
+		<rdfs:label>gradient_richardson_number</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/log_law_displacement_length">
+		<rdfs:label>log_law_displacement_length</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/log_law_roughness_length">
+		<rdfs:label>log_law_roughness_length</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/reference_height_speed">
+		<rdfs:label>reference_height_speed</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/speed_reference_height">
+		<rdfs:label>speed_reference_height</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/bulk_mass_aerodynamic_conductance">
+		<rdfs:label>bulk_mass_aerodynamic_conductance</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/bulk_mass_transfer_coefficient">
+		<rdfs:label>bulk_mass_transfer_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/neutral_bulk_mass_transfer_coefficient">
+		<rdfs:label>neutral_bulk_mass_transfer_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/precipitation_duration">
+		<rdfs:label>precipitation_duration</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/precipitation_volume_flux">
+		<rdfs:label>precipitation_volume_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/precipitation_leq-volume_flux">
+		<rdfs:label>precipitation_leq-volume_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/rainfall_volume_flux">
+		<rdfs:label>rainfall_volume_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/snowfall_leq-volume_flux">
+		<rdfs:label>snowfall_leq-volume_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/icefall_leq-volume_flux">
+		<rdfs:label>icefall_leq-volume_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/icefall_mass-per-volume_density">
+		<rdfs:label>icefall_mass-per-volume_density</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/precipitation_mass_flux">
+		<rdfs:label>precipitation_mass_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/snowfall_mass-per-volume_density">
+		<rdfs:label>snowfall_mass-per-volume_density</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/0-to-60mph_acceleration_time">
+		<rdfs:label>0-to-60mph_acceleration_time</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/acceleration">
+		<rdfs:label>acceleration</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/braking_distance">
+		<rdfs:label>braking_distance</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/braking_force">
+		<rdfs:label>braking_force</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/cargo_capacity">
+		<rdfs:label>cargo_capacity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/fuel_economy">
+		<rdfs:label>fuel_economy</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/manufacture_year">
+		<rdfs:label>manufacture_year</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mass">
+		<rdfs:label>mass</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/msrp-price">
+		<rdfs:label>msrp-price</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/new-price">
+		<rdfs:label>new-price</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/safety_rating">
+		<rdfs:label>safety_rating</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/top_speed">
+		<rdfs:label>top_speed</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/total_stopping_distance">
+		<rdfs:label>total_stopping_distance</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/total_stopping_time">
+		<rdfs:label>total_stopping_time</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/turning_radius">
+		<rdfs:label>turning_radius</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/vehicle_identification_number">
+		<rdfs:label>vehicle_identification_number</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/weight">
+		<rdfs:label>weight</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/wheelbase_length">
+		<rdfs:label>wheelbase_length</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/width">
+		<rdfs:label>width</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/rotational_inertia">
+		<rdfs:label>rotational_inertia</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/height">
+		<rdfs:label>height</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/approach_angle">
+		<rdfs:label>approach_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/breakover_angle">
+		<rdfs:label>breakover_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/departure_angle">
+		<rdfs:label>departure_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/clearance_height">
+		<rdfs:label>clearance_height</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/emission_rate">
+		<rdfs:label>emission_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/count">
+		<rdfs:label>count</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/reaction_distance">
+		<rdfs:label>reaction_distance</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/reaction_time">
+		<rdfs:label>reaction_time</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/max_output_power">
+		<rdfs:label>max_output_power</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/power-to-weight_ratio">
+		<rdfs:label>power-to-weight_ratio</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/volume">
+		<rdfs:label>volume</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/rotation_rate">
+		<rdfs:label>rotation_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/torque">
+		<rdfs:label>torque</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/diameter">
+		<rdfs:label>diameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/stroke_ratio">
+		<rdfs:label>stroke_ratio</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/stroke_length">
+		<rdfs:label>stroke_length</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/area">
+		<rdfs:label>area</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/consumption_rate">
+		<rdfs:label>consumption_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/economy">
+		<rdfs:label>economy</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/specific_energy_content">
+		<rdfs:label>specific_energy_content</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/contact_area">
+		<rdfs:label>contact_area</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/inflation_pressure">
+		<rdfs:label>inflation_pressure</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/camber_angle">
+		<rdfs:label>camber_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/camber_force">
+		<rdfs:label>camber_force</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/caster_angle">
+		<rdfs:label>caster_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/distance">
+		<rdfs:label>distance</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/impact_impulse">
+		<rdfs:label>impact_impulse</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/d-infinity_total_contributing_area">
+		<rdfs:label>d-infinity_total_contributing_area</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/d8_total_contributing_area">
+		<rdfs:label>d8_total_contributing_area</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/flint_law_coefficient">
+		<rdfs:label>flint_law_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/flint_law_exponent">
+		<rdfs:label>flint_law_exponent</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mass-flux_total_contributing_area">
+		<rdfs:label>mass-flux_total_contributing_area</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/elevation">
+		<rdfs:label>elevation</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/pfafstetter_code">
+		<rdfs:label>pfafstetter_code</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/usgs_hydrologic_unit_code">
+		<rdfs:label>usgs_hydrologic_unit_code</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/circular_ity_shape_factor">
+		<rdfs:label>circular_ity_shape_factor</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/perimeter">
+		<rdfs:label>perimeter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/area_over_diameter_shape_factor">
+		<rdfs:label>area_over_diameter_shape_factor</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/latitude">
+		<rdfs:label>latitude</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/longitude">
+		<rdfs:label>longitude</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/horton_bifurcation_ratio">
+		<rdfs:label>horton_bifurcation_ratio</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/shreve_magnitude">
+		<rdfs:label>shreve_magnitude</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/total-length-to-area_ratio">
+		<rdfs:label>total-length-to-area_ratio</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/total_length">
+		<rdfs:label>total_length</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/total-length-per-area_density">
+		<rdfs:label>total-length-per-area_density</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/hack_law_coefficient">
+		<rdfs:label>hack_law_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/hack_law_exponent">
+		<rdfs:label>hack_law_exponent</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/downvalley_sinuosity">
+		<rdfs:label>downvalley_sinuosity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/sinuosity">
+		<rdfs:label>sinuosity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/area_fraction">
+		<rdfs:label>area_fraction</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/bankfull-width">
+		<rdfs:label>bankfull-width</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/total_contributing_area">
+		<rdfs:label>total_contributing_area</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/slope">
+		<rdfs:label>slope</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/yield">
+		<rdfs:label>yield</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/fanning_friction_factor">
+		<rdfs:label>fanning_friction_factor</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mass_flow_rate">
+		<rdfs:label>mass_flow_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/volume_flow_rate">
+		<rdfs:label>volume_flow_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mean_depth">
+		<rdfs:label>mean_depth</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/depth">
+		<rdfs:label>depth</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/volume_flux">
+		<rdfs:label>volume_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/width-to-depth_ratio">
+		<rdfs:label>width-to-depth_ratio</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/number-per-area_density">
+		<rdfs:label>number-per-area_density</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mass_ratio">
+		<rdfs:label>mass_ratio</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mean_diameter">
+		<rdfs:label>mean_diameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/permeability">
+		<rdfs:label>permeability</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/uplift_rate">
+		<rdfs:label>uplift_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/poisson_ratio">
+		<rdfs:label>poisson_ratio</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/youngs_modulus">
+		<rdfs:label>youngs_modulus</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/bond_angle">
+		<rdfs:label>bond_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/schwarzchild_radius">
+		<rdfs:label>schwarzchild_radius</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/hausdorff_dimension">
+		<rdfs:label>hausdorff_dimension</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/bond_length">
+		<rdfs:label>bond_length</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/neutron_number">
+		<rdfs:label>neutron_number</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/characteristic_emission_frequency">
+		<rdfs:label>characteristic_emission_frequency</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mass_number">
+		<rdfs:label>mass_number</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/proton_number">
+		<rdfs:label>proton_number</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/relative_atomic_mass">
+		<rdfs:label>relative_atomic_mass</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/downstream_hydraulic_geometry_depth-vs-discharge_coefficient">
+		<rdfs:label>downstream_hydraulic_geometry_depth-vs-discharge_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/downstream_hydraulic_geometry_depth-vs-discharge_exponent">
+		<rdfs:label>downstream_hydraulic_geometry_depth-vs-discharge_exponent</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/downstream_hydraulic_geometry_slope-vs-discharge_coefficient">
+		<rdfs:label>downstream_hydraulic_geometry_slope-vs-discharge_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/downstream_hydraulic_geometry_slope-vs-discharge_exponent">
+		<rdfs:label>downstream_hydraulic_geometry_slope-vs-discharge_exponent</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/downstream_hydraulic_geometry_speed-vs-discharge_coefficient">
+		<rdfs:label>downstream_hydraulic_geometry_speed-vs-discharge_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/downstream_hydraulic_geometry_speed-vs-discharge_exponent">
+		<rdfs:label>downstream_hydraulic_geometry_speed-vs-discharge_exponent</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/downstream_hydraulic_geometry_width-vs-discharge_coefficient">
+		<rdfs:label>downstream_hydraulic_geometry_width-vs-discharge_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/downstream_hydraulic_geometry_width-vs-discharge_exponent">
+		<rdfs:label>downstream_hydraulic_geometry_width-vs-discharge_exponent</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/downstream_hydraulic_geometry_width_vs_discharge_coefficient">
+		<rdfs:label>downstream_hydraulic_geometry_width_vs_discharge_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/downstream_hydraulic_geometry_width_vs_discharge_exponent">
+		<rdfs:label>downstream_hydraulic_geometry_width_vs_discharge_exponent</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/meander_amplitude">
+		<rdfs:label>meander_amplitude</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/meander_curvature_radius">
+		<rdfs:label>meander_curvature_radius</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/meander_migration_rate">
+		<rdfs:label>meander_migration_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/meander_wavelength">
+		<rdfs:label>meander_wavelength</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/station_hydraulic_geometry_depth-vs-discharge_coefficient">
+		<rdfs:label>station_hydraulic_geometry_depth-vs-discharge_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/station_hydraulic_geometry_depth-vs-discharge_exponent">
+		<rdfs:label>station_hydraulic_geometry_depth-vs-discharge_exponent</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/station_hydraulic_geometry_slope-vs-discharge_coefficient">
+		<rdfs:label>station_hydraulic_geometry_slope-vs-discharge_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/station_hydraulic_geometry_slope-vs-discharge_exponent">
+		<rdfs:label>station_hydraulic_geometry_slope-vs-discharge_exponent</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/station_hydraulic_geometry_speed-vs-discharge_coefficient">
+		<rdfs:label>station_hydraulic_geometry_speed-vs-discharge_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/station_hydraulic_geometry_speed-vs-discharge_exponent">
+		<rdfs:label>station_hydraulic_geometry_speed-vs-discharge_exponent</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/station_hydraulic_geometry_width-vs-discharge_coefficient">
+		<rdfs:label>station_hydraulic_geometry_width-vs-discharge_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/station_hydraulic_geometry_width-vs-discharge_exponent">
+		<rdfs:label>station_hydraulic_geometry_width-vs-discharge_exponent</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/saturated_hydraulic_conductivity">
+		<rdfs:label>saturated_hydraulic_conductivity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/volume-per-length_flow_rate">
+		<rdfs:label>volume-per-length_flow_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/volume-per-unit-length_flow_rate">
+		<rdfs:label>volume-per-unit-length_flow_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/thickness">
+		<rdfs:label>thickness</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/d50_diameter">
+		<rdfs:label>d50_diameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/d84_diameter">
+		<rdfs:label>d84_diameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/shear_stress">
+		<rdfs:label>shear_stress</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/relative_roughness_ratio">
+		<rdfs:label>relative_roughness_ratio</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/relative_smoothness_ratio">
+		<rdfs:label>relative_smoothness_ratio</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/shear_speed">
+		<rdfs:label>shear_speed</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/shear_velocity">
+		<rdfs:label>shear_velocity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/shields_parameter">
+		<rdfs:label>shields_parameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/shields_critical_shear_stress">
+		<rdfs:label>shields_critical_shear_stress</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/shields_number">
+		<rdfs:label>shields_number</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/separation_distance">
+		<rdfs:label>separation_distance</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/volume-per-width_flow_rate">
+		<rdfs:label>volume-per-width_flow_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/volume_flow_rate_law_area_exponent">
+		<rdfs:label>volume_flow_rate_law_area_exponent</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/volume_flow_rate_law_coefficient">
+		<rdfs:label>volume_flow_rate_law_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/depth_times_bottom-surface-slope">
+		<rdfs:label>depth_times_bottom-surface-slope</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/initial_volume">
+		<rdfs:label>initial_volume</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/ph">
+		<rdfs:label>ph</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/power">
+		<rdfs:label>power</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/reaeration_coefficient">
+		<rdfs:label>reaeration_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/chezy_formula_coefficient">
+		<rdfs:label>chezy_formula_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/darcy_friction_factor">
+		<rdfs:label>darcy_friction_factor</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/manning_n_parameter">
+		<rdfs:label>manning_n_parameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/energy-per-volume_dissipation_rate">
+		<rdfs:label>energy-per-volume_dissipation_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/froude_number">
+		<rdfs:label>froude_number</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/manning_k_parameter">
+		<rdfs:label>manning_k_parameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/reynolds_number">
+		<rdfs:label>reynolds_number</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/energy">
+		<rdfs:label>energy</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/production_rate">
+		<rdfs:label>production_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/stokes_settling_speed">
+		<rdfs:label>stokes_settling_speed</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/immersed_weight">
+		<rdfs:label>immersed_weight</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/rouse_number">
+		<rdfs:label>rouse_number</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/volume_flow_rate_law_slope_exponent">
+		<rdfs:label>volume_flow_rate_law_slope_exponent</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/depth-vs-half-width_coefficient">
+		<rdfs:label>depth-vs-half-width_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/depth-vs-half-width_exponent">
+		<rdfs:label>depth-vs-half-width_exponent</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/hydraulic_radius">
+		<rdfs:label>hydraulic_radius</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/initial_mean_depth">
+		<rdfs:label>initial_mean_depth</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/wetted_area">
+		<rdfs:label>wetted_area</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/wetted_perimeter">
+		<rdfs:label>wetted_perimeter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/discharge_coefficient">
+		<rdfs:label>discharge_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/coefficient">
+		<rdfs:label>coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/flare_angle">
+		<rdfs:label>flare_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/affinity">
+		<rdfs:label>affinity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/conching_time">
+		<rdfs:label>conching_time</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/melting_point_temperature">
+		<rdfs:label>melting_point_temperature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/metabolizable-energy-per-mass_density">
+		<rdfs:label>metabolizable-energy-per-mass_density</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/tempering_time">
+		<rdfs:label>tempering_time</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/apparent_viscosity">
+		<rdfs:label>apparent_viscosity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/casson_model_k_parameter">
+		<rdfs:label>casson_model_k_parameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/herschel_bulkley_coefficient">
+		<rdfs:label>herschel_bulkley_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/herschel_bulkley_exponent">
+		<rdfs:label>herschel_bulkley_exponent</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/yield_stress">
+		<rdfs:label>yield_stress</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/volume_fraction">
+		<rdfs:label>volume_fraction</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/thermal_energy_content">
+		<rdfs:label>thermal_energy_content</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/kinetic_friction_coefficient">
+		<rdfs:label>kinetic_friction_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/price_index">
+		<rdfs:label>price_index</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mean_subsidence_rate">
+		<rdfs:label>mean_subsidence_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/opening_angle">
+		<rdfs:label>opening_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/inflow_vector">
+		<rdfs:label>inflow_vector</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mass_transport_rate">
+		<rdfs:label>mass_transport_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/wetted-area">
+		<rdfs:label>wetted-area</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/wetted-perimeter">
+		<rdfs:label>wetted-perimeter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/drainage_density">
+		<rdfs:label>drainage_density</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/top_width">
+		<rdfs:label>top_width</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/repose_angle">
+		<rdfs:label>repose_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/area_ratio">
+		<rdfs:label>area_ratio</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/progradation_rate">
+		<rdfs:label>progradation_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/reworking_depth">
+		<rdfs:label>reworking_depth</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/dip_angle">
+		<rdfs:label>dip_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/strike_angle">
+		<rdfs:label>strike_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/travel_time">
+		<rdfs:label>travel_time</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/average_distance">
+		<rdfs:label>average_distance</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mean_distance">
+		<rdfs:label>mean_distance</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/bond_albedo">
+		<rdfs:label>bond_albedo</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/coriolis_frequency">
+		<rdfs:label>coriolis_frequency</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/escape_speed">
+		<rdfs:label>escape_speed</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/geometric_albedo">
+		<rdfs:label>geometric_albedo</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mean_mass-to-volume_density">
+		<rdfs:label>mean_mass-to-volume_density</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/rotation_angular_speed">
+		<rdfs:label>rotation_angular_speed</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/rotation_kinetic_energy">
+		<rdfs:label>rotation_kinetic_energy</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/rotation_period">
+		<rdfs:label>rotation_period</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/sidereal_day">
+		<rdfs:label>sidereal_day</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/solar_azimuth_angle">
+		<rdfs:label>solar_azimuth_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/solar_constant">
+		<rdfs:label>solar_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/solar_elevation_angle">
+		<rdfs:label>solar_elevation_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/solar_irradiation_constant">
+		<rdfs:label>solar_irradiation_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/solar_zenith_angle">
+		<rdfs:label>solar_zenith_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/standard_gravity_constant">
+		<rdfs:label>standard_gravity_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/visual_geometric_albedo">
+		<rdfs:label>visual_geometric_albedo</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/nutation_period">
+		<rdfs:label>nutation_period</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/nutation_rate">
+		<rdfs:label>nutation_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/precession_period">
+		<rdfs:label>precession_period</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/precession_rate">
+		<rdfs:label>precession_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/tilt_angle">
+		<rdfs:label>tilt_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/radius">
+		<rdfs:label>radius</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/eccentricity">
+		<rdfs:label>eccentricity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/equatorial_radius">
+		<rdfs:label>equatorial_radius</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/flattening_ratio">
+		<rdfs:label>flattening_ratio</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/polar_radius">
+		<rdfs:label>polar_radius</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/second_flattening_ratio">
+		<rdfs:label>second_flattening_ratio</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/third_flattening_ratio">
+		<rdfs:label>third_flattening_ratio</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/average_temperature">
+		<rdfs:label>average_temperature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/circumference">
+		<rdfs:label>circumference</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/carrying_capacity">
+		<rdfs:label>carrying_capacity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/critical_slip_distance">
+		<rdfs:label>critical_slip_distance</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/dynamic_stress">
+		<rdfs:label>dynamic_stress</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/static_stress">
+		<rdfs:label>static_stress</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/duration">
+		<rdfs:label>duration</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/slip-vector">
+		<rdfs:label>slip-vector</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/moment_tensor">
+		<rdfs:label>moment_tensor</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/gutenberg-richter_law_a_parameter">
+		<rdfs:label>gutenberg-richter_law_a_parameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/gutenberg-richter_law_b_parameter">
+		<rdfs:label>gutenberg-richter_law_b_parameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/modified_mercali_intensity">
+		<rdfs:label>modified_mercali_intensity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/modified_omori_law_c_parameter">
+		<rdfs:label>modified_omori_law_c_parameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/modified_omori_law_k_parameter">
+		<rdfs:label>modified_omori_law_k_parameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/modified_omori_law_p_parameter">
+		<rdfs:label>modified_omori_law_p_parameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/moment_magnitude">
+		<rdfs:label>moment_magnitude</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/origin_time">
+		<rdfs:label>origin_time</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/radiated_seismic_energy">
+		<rdfs:label>radiated_seismic_energy</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/release_energy">
+		<rdfs:label>release_energy</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/richter_magnitude">
+		<rdfs:label>richter_magnitude</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/rupture_speed">
+		<rdfs:label>rupture_speed</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/seismic_moment_energy">
+		<rdfs:label>seismic_moment_energy</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/slip_angle">
+		<rdfs:label>slip_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/slip_distance">
+		<rdfs:label>slip_distance</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/slip_duration">
+		<rdfs:label>slip_duration</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/slip_speed">
+		<rdfs:label>slip_speed</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/rake_angle">
+		<rdfs:label>rake_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/rupture_area">
+		<rdfs:label>rupture_area</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/rupture_length">
+		<rdfs:label>rupture_length</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/rupture_time">
+		<rdfs:label>rupture_time</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/rupture_width">
+		<rdfs:label>rupture_width</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/slip-rake_angle">
+		<rdfs:label>slip-rake_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/amplitude">
+		<rdfs:label>amplitude</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/frequency">
+		<rdfs:label>frequency</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/period">
+		<rdfs:label>period</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/takeoff_angle">
+		<rdfs:label>takeoff_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/wavelength">
+		<rdfs:label>wavelength</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/bulk_modulus">
+		<rdfs:label>bulk_modulus</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/electric_field_vector">
+		<rdfs:label>electric_field_vector</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/electrical_conductivity">
+		<rdfs:label>electrical_conductivity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/lame_first_parameter">
+		<rdfs:label>lame_first_parameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/p_wave_modulus">
+		<rdfs:label>p_wave_modulus</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/shear_modulus">
+		<rdfs:label>shear_modulus</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/young_modulus">
+		<rdfs:label>young_modulus</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/aphelion_distance">
+		<rdfs:label>aphelion_distance</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/perihelion_distance">
+		<rdfs:label>perihelion_distance</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/declination_angle">
+		<rdfs:label>declination_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/diurnal_temperature">
+		<rdfs:label>diurnal_temperature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/arrival_time">
+		<rdfs:label>arrival_time</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/shaking_amplitude">
+		<rdfs:label>shaking_amplitude</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/solar_noon_time">
+		<rdfs:label>solar_noon_time</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/apparent_magnitude">
+		<rdfs:label>apparent_magnitude</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/rise_time">
+		<rdfs:label>rise_time</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/set_time">
+		<rdfs:label>set_time</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/subtended_angle">
+		<rdfs:label>subtended_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/azimuth_angle">
+		<rdfs:label>azimuth_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/elevation_angle">
+		<rdfs:label>elevation_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/zenith_angle">
+		<rdfs:label>zenith_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/gutenberg_richter_law_a_parameter">
+		<rdfs:label>gutenberg_richter_law_a_parameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/gutenberg_richter_law_b_parameter">
+		<rdfs:label>gutenberg_richter_law_b_parameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/diversity_index">
+		<rdfs:label>diversity_index</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/charge-to-mass_ratio">
+		<rdfs:label>charge-to-mass_ratio</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/compton_wavelength">
+		<rdfs:label>compton_wavelength</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/drift_speed">
+		<rdfs:label>drift_speed</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/electric_charge">
+		<rdfs:label>electric_charge</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mass-to-charge_ratio">
+		<rdfs:label>mass-to-charge_ratio</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/relativistic_mass">
+		<rdfs:label>relativistic_mass</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/rest_mass">
+		<rdfs:label>rest_mass</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/drift_velocity">
+		<rdfs:label>drift_velocity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/thermal_efficiency">
+		<rdfs:label>thermal_efficiency</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/convection_term">
+		<rdfs:label>convection_term</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/diffusion_term">
+		<rdfs:label>diffusion_term</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/courant_number">
+		<rdfs:label>courant_number</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/body_force_term">
+		<rdfs:label>body_force_term</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/convective_acceleration_term">
+		<rdfs:label>convective_acceleration_term</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/pressure_gradient_term">
+		<rdfs:label>pressure_gradient_term</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/unsteady_acceleration_term">
+		<rdfs:label>unsteady_acceleration_term</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/viscosity_term">
+		<rdfs:label>viscosity_term</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/laplacian_term">
+		<rdfs:label>laplacian_term</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/source_term">
+		<rdfs:label>source_term</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/torsion_angle">
+		<rdfs:label>torsion_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/expected_return_period">
+		<rdfs:label>expected_return_period</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/critical_density">
+		<rdfs:label>critical_density</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/equivalence_ratio">
+		<rdfs:label>equivalence_ratio</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/glen_law_coefficient">
+		<rdfs:label>glen_law_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/glen_law_exponent">
+		<rdfs:label>glen_law_exponent</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/aspect_angle">
+		<rdfs:label>aspect_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/slope_angle">
+		<rdfs:label>slope_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/sliding_speed">
+		<rdfs:label>sliding_speed</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/ablation_rate">
+		<rdfs:label>ablation_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/accumulation_rate">
+		<rdfs:label>accumulation_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/melt_volume_flux">
+		<rdfs:label>melt_volume_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/initial_thickness">
+		<rdfs:label>initial_thickness</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mass-specific_latent_fusion_heat">
+		<rdfs:label>mass-specific_latent_fusion_heat</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mass-specific_latent_sublimation_heat">
+		<rdfs:label>mass-specific_latent_sublimation_heat</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mass-specific_latent_vaporization_heat">
+		<rdfs:label>mass-specific_latent_vaporization_heat</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/melt_mass_flux">
+		<rdfs:label>melt_mass_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/peclet_number">
+		<rdfs:label>peclet_number</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/pressure_melting_point_temperature">
+		<rdfs:label>pressure_melting_point_temperature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/relative_permittivity">
+		<rdfs:label>relative_permittivity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/thermal_volume_expansion_coefficient">
+		<rdfs:label>thermal_volume_expansion_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/volume-vs-area_law_coefficient">
+		<rdfs:label>volume-vs-area_law_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/volume-vs-area_law_exponent">
+		<rdfs:label>volume-vs-area_law_exponent</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mass_flux">
+		<rdfs:label>mass_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/normalized_distance">
+		<rdfs:label>normalized_distance</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/advance_rate">
+		<rdfs:label>advance_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/calving_rate">
+		<rdfs:label>calving_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/retreat_rate">
+		<rdfs:label>retreat_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/desublimation_mass_flux">
+		<rdfs:label>desublimation_mass_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/desublimation_volume_flux">
+		<rdfs:label>desublimation_volume_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/sublimation_mass_flux">
+		<rdfs:label>sublimation_mass_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/sublimation_volume_flux">
+		<rdfs:label>sublimation_volume_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/heat_flux">
+		<rdfs:label>heat_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/scour_rate">
+		<rdfs:label>scour_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/hearing_frequency">
+		<rdfs:label>hearing_frequency</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mean_height">
+		<rdfs:label>mean_height</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/count-per-volume">
+		<rdfs:label>count-per-volume</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/detection_number">
+		<rdfs:label>detection_number</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/bond_energy">
+		<rdfs:label>bond_energy</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/aspect_ratio">
+		<rdfs:label>aspect_ratio</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/radiation_intensity">
+		<rdfs:label>radiation_intensity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/bowen_ratio">
+		<rdfs:label>bowen_ratio</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/elevation_lowering_rate">
+		<rdfs:label>elevation_lowering_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/albedo">
+		<rdfs:label>albedo</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/gaussian_curvature">
+		<rdfs:label>gaussian_curvature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/infiltration_rate">
+		<rdfs:label>infiltration_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/initial_elevation">
+		<rdfs:label>initial_elevation</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/max_normal_curvature">
+		<rdfs:label>max_normal_curvature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mean_curvature">
+		<rdfs:label>mean_curvature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/min_normal_curvature">
+		<rdfs:label>min_normal_curvature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/plan_curvature">
+		<rdfs:label>plan_curvature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/profile_curvature">
+		<rdfs:label>profile_curvature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/specific_contributing_area">
+		<rdfs:label>specific_contributing_area</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/streamline_curvature">
+		<rdfs:label>streamline_curvature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/sunshine_duration">
+		<rdfs:label>sunshine_duration</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/tangential_curvature">
+		<rdfs:label>tangential_curvature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/topographic_wetness_index">
+		<rdfs:label>topographic_wetness_index</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/backscattered_energy_flux">
+		<rdfs:label>backscattered_energy_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/diffuse_energy_flux">
+		<rdfs:label>diffuse_energy_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/direct_energy_flux">
+		<rdfs:label>direct_energy_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/emitted_energy_flux">
+		<rdfs:label>emitted_energy_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/conduction_heat_flux">
+		<rdfs:label>conduction_heat_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/baseflow_mass_flux">
+		<rdfs:label>baseflow_mass_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/baseflow_volume_flux">
+		<rdfs:label>baseflow_volume_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/evaporation_volume_flux">
+		<rdfs:label>evaporation_volume_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/runoff_volume_flux">
+		<rdfs:label>runoff_volume_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/evaporation_mass_flux">
+		<rdfs:label>evaporation_mass_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/infiltration_ponding_depth">
+		<rdfs:label>infiltration_ponding_depth</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/infiltration_ponding_time">
+		<rdfs:label>infiltration_ponding_time</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/potential_evaporation_volume_flux">
+		<rdfs:label>potential_evaporation_volume_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/priestley-taylor_alpha_coefficient">
+		<rdfs:label>priestley-taylor_alpha_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/runoff_mass_flux">
+		<rdfs:label>runoff_mass_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/volume-per-unit-contour-length_flow_rate">
+		<rdfs:label>volume-per-unit-contour-length_flow_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/pressure_head">
+		<rdfs:label>pressure_head</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/depth-integrated_velocity">
+		<rdfs:label>depth-integrated_velocity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/unit-width_discharge">
+		<rdfs:label>unit-width_discharge</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/depth-integrated_speed">
+		<rdfs:label>depth-integrated_speed</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/leaf-area-index">
+		<rdfs:label>leaf-area-index</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/reference_stomatal_resistance">
+		<rdfs:label>reference_stomatal_resistance</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/stomatal_resistance">
+		<rdfs:label>stomatal_resistance</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/interception_capacity">
+		<rdfs:label>interception_capacity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/interception_volume_flux">
+		<rdfs:label>interception_volume_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/throughfall_volume_flux">
+		<rdfs:label>throughfall_volume_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/transpiration_volume_flux">
+		<rdfs:label>transpiration_volume_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/postal_code">
+		<rdfs:label>postal_code</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/chemical_affinity">
+		<rdfs:label>chemical_affinity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/local_rise_time">
+		<rdfs:label>local_rise_time</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/sidereal_period">
+		<rdfs:label>sidereal_period</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/synodic_period">
+		<rdfs:label>synodic_period</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/binomial_coefficient">
+		<rdfs:label>binomial_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/catalan_constant">
+		<rdfs:label>catalan_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/chaitin_constant">
+		<rdfs:label>chaitin_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/conway_constant">
+		<rdfs:label>conway_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/e_constant">
+		<rdfs:label>e_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/euler_gamma_constant">
+		<rdfs:label>euler_gamma_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/feigenbaum_alpha_constant">
+		<rdfs:label>feigenbaum_alpha_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/feigenbaum_delta_constant">
+		<rdfs:label>feigenbaum_delta_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/golden_ratio_constant">
+		<rdfs:label>golden_ratio_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/googol_constant">
+		<rdfs:label>googol_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/khinchin_constant">
+		<rdfs:label>khinchin_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/pi_constant">
+		<rdfs:label>pi_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/pythagoras_constant">
+		<rdfs:label>pythagoras_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/sierpinski_constant">
+		<rdfs:label>sierpinski_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/twin_prime_constant">
+		<rdfs:label>twin_prime_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/initial_time_step">
+		<rdfs:label>initial_time_step</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/max_allowed_time_step">
+		<rdfs:label>max_allowed_time_step</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/min_allowed_time_step">
+		<rdfs:label>min_allowed_time_step</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/run_time">
+		<rdfs:label>run_time</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/spinup_time">
+		<rdfs:label>spinup_time</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/start_time">
+		<rdfs:label>start_time</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/stop_time">
+		<rdfs:label>stop_time</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/time">
+		<rdfs:label>time</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/time_step">
+		<rdfs:label>time_step</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/time_step_count">
+		<rdfs:label>time_step_count</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/column_index">
+		<rdfs:label>column_index</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/d8_flow_length">
+		<rdfs:label>d8_flow_length</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/d8_flow_width">
+		<rdfs:label>d8_flow_width</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/d8_slope">
+		<rdfs:label>d8_slope</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/d_infinity_slope">
+		<rdfs:label>d_infinity_slope</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/d_infinity_total_contributing_area">
+		<rdfs:label>d_infinity_total_contributing_area</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/row-major-offset_index">
+		<rdfs:label>row-major-offset_index</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/row_index">
+		<rdfs:label>row_index</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/geodetic_latitude">
+		<rdfs:label>geodetic_latitude</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/x_coordinate">
+		<rdfs:label>x_coordinate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/y_coordinate">
+		<rdfs:label>y_coordinate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/rotation_angle">
+		<rdfs:label>rotation_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/porosity">
+		<rdfs:label>porosity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/saturated_thickness">
+		<rdfs:label>saturated_thickness</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/q_factor">
+		<rdfs:label>q_factor</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/static_friction_coefficient">
+		<rdfs:label>static_friction_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/atomic_mass_constant">
+		<rdfs:label>atomic_mass_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/avogadro_constant">
+		<rdfs:label>avogadro_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/boltzmann_constant">
+		<rdfs:label>boltzmann_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/cosmological_constant">
+		<rdfs:label>cosmological_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/coulomb_constant">
+		<rdfs:label>coulomb_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/elementary_charge_constant">
+		<rdfs:label>elementary_charge_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/fine_structure_constant">
+		<rdfs:label>fine_structure_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/gravitational_coupling_constant">
+		<rdfs:label>gravitational_coupling_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/hartree_energy_constant">
+		<rdfs:label>hartree_energy_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/ideal_gas_constant">
+		<rdfs:label>ideal_gas_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/planck_constant">
+		<rdfs:label>planck_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/planck_mass_constant">
+		<rdfs:label>planck_mass_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/radiation_constant">
+		<rdfs:label>radiation_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/reduced_planck_constant">
+		<rdfs:label>reduced_planck_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/rydberg_constant">
+		<rdfs:label>rydberg_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/static_relative_permittivity">
+		<rdfs:label>static_relative_permittivity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/stefan_boltzmann_constant">
+		<rdfs:label>stefan_boltzmann_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/universal_gravitation_constant">
+		<rdfs:label>universal_gravitation_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/vacuum_electric_permittivity_constant">
+		<rdfs:label>vacuum_electric_permittivity_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/vacuum_impedance_constant">
+		<rdfs:label>vacuum_impedance_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/vacuum_light_speed_constant">
+		<rdfs:label>vacuum_light_speed_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/vacuum_magnetic_permeability_constant">
+		<rdfs:label>vacuum_magnetic_permeability_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/von_karman_constant">
+		<rdfs:label>von_karman_constant</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/extensional_viscosity">
+		<rdfs:label>extensional_viscosity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/leading_coefficient">
+		<rdfs:label>leading_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mrsp_price">
+		<rdfs:label>mrsp_price</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/angular_momentum">
+		<rdfs:label>angular_momentum</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/angular_velocity">
+		<rdfs:label>angular_velocity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/impact_velocity">
+		<rdfs:label>impact_velocity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/initial_velocity">
+		<rdfs:label>initial_velocity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/drag_force">
+		<rdfs:label>drag_force</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/firing_speed">
+		<rdfs:label>firing_speed</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/firing_time">
+		<rdfs:label>firing_time</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/impact_depth">
+		<rdfs:label>impact_depth</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/impact_force">
+		<rdfs:label>impact_force</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/impact_time">
+		<rdfs:label>impact_time</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/initial_altitude">
+		<rdfs:label>initial_altitude</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/initial_angular_momentum">
+		<rdfs:label>initial_angular_momentum</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/initial_latitude">
+		<rdfs:label>initial_latitude</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/initial_longitude">
+		<rdfs:label>initial_longitude</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/kinetic_energy">
+		<rdfs:label>kinetic_energy</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/kinetic_energy_plus_potential_energy">
+		<rdfs:label>kinetic_energy_plus_potential_energy</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/lift_force">
+		<rdfs:label>lift_force</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/potential_energy">
+		<rdfs:label>potential_energy</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/potential_range_distance">
+		<rdfs:label>potential_range_distance</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/propelling_force">
+		<rdfs:label>propelling_force</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/range_distance">
+		<rdfs:label>range_distance</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/roll_rotation_rate">
+		<rdfs:label>roll_rotation_rate</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/specific_kinetic_energy">
+		<rdfs:label>specific_kinetic_energy</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/specific_potential_energy">
+		<rdfs:label>specific_potential_energy</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/thermal_energy">
+		<rdfs:label>thermal_energy</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/curvature">
+		<rdfs:label>curvature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/hydraulic_head">
+		<rdfs:label>hydraulic_head</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/minimum_radius">
+		<rdfs:label>minimum_radius</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mass_fraction">
+		<rdfs:label>mass_fraction</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/net_volume_flux">
+		<rdfs:label>net_volume_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/deposition_age">
+		<rdfs:label>deposition_age</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/immersed-weight">
+		<rdfs:label>immersed-weight</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mass-per-volume_bulk_density">
+		<rdfs:label>mass-per-volume_bulk_density</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mass-per-volume_particle_density">
+		<rdfs:label>mass-per-volume_particle_density</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/thickness-to-depth_ratio">
+		<rdfs:label>thickness-to-depth_ratio</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/net_heat_flux">
+		<rdfs:label>net_heat_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/salinity">
+		<rdfs:label>salinity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/initial_length">
+		<rdfs:label>initial_length</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/flow_speed">
+		<rdfs:label>flow_speed</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/age">
+		<rdfs:label>age</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/draft_depth">
+		<rdfs:label>draft_depth</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/extent">
+		<rdfs:label>extent</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/freeboard_height">
+		<rdfs:label>freeboard_height</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/normal_vector">
+		<rdfs:label>normal_vector</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/azimuth_angle_tangent_vector">
+		<rdfs:label>azimuth_angle_tangent_vector</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/closure_depth">
+		<rdfs:label>closure_depth</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/phase_velocity">
+		<rdfs:label>phase_velocity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/group_velocity">
+		<rdfs:label>group_velocity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/ashton_et_al_approach_angle_asymmetry_parameter">
+		<rdfs:label>ashton_et_al_approach_angle_asymmetry_parameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/ashton_et_al_approach_angle_highness_parameter">
+		<rdfs:label>ashton_et_al_approach_angle_highness_parameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/significant_height">
+		<rdfs:label>significant_height</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/reference_pressure">
+		<rdfs:label>reference_pressure</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/reference_temperature">
+		<rdfs:label>reference_temperature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/surge_height">
+		<rdfs:label>surge_height</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/geopotential_height">
+		<rdfs:label>geopotential_height</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/degrees-per-hour_speed">
+		<rdfs:label>degrees-per-hour_speed</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/phase_angle">
+		<rdfs:label>phase_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/breaking_fraction">
+		<rdfs:label>breaking_fraction</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/breaking_height">
+		<rdfs:label>breaking_height</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/breaking_height-to-depth_ratio">
+		<rdfs:label>breaking_height-to-depth_ratio</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/energy-per-unit-area_density">
+		<rdfs:label>energy-per-unit-area_density</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/group-speed-to-phase-speed_ratio">
+		<rdfs:label>group-speed-to-phase-speed_ratio</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/group_speed">
+		<rdfs:label>group_speed</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/intrinsic_angular_frequency">
+		<rdfs:label>intrinsic_angular_frequency</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/orbital_speed">
+		<rdfs:label>orbital_speed</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/observed_angular_frequency">
+		<rdfs:label>observed_angular_frequency</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/phase_speed">
+		<rdfs:label>phase_speed</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/refraction_angle">
+		<rdfs:label>refraction_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/steepness">
+		<rdfs:label>steepness</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/angular_frequency_times_time">
+		<rdfs:label>angular_frequency_times_time</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/wavenumber">
+		<rdfs:label>wavenumber</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/vertex_angle">
+		<rdfs:label>vertex_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/power-per-unit-length">
+		<rdfs:label>power-per-unit-length</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/incidence_angle">
+		<rdfs:label>incidence_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mass-to-volume_density">
+		<rdfs:label>mass-to-volume_density</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/brunt_vaisala_frequency">
+		<rdfs:label>brunt_vaisala_frequency</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/eddy_viscosity">
+		<rdfs:label>eddy_viscosity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/osmotic_pressure">
+		<rdfs:label>osmotic_pressure</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/secchi_depth">
+		<rdfs:label>secchi_depth</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/solubility">
+		<rdfs:label>solubility</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mean_flow_speed">
+		<rdfs:label>mean_flow_speed</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/diffusion_coefficient">
+		<rdfs:label>diffusion_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/horizontal_diffusion_coefficient">
+		<rdfs:label>horizontal_diffusion_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/vertical_diffusion_coefficient">
+		<rdfs:label>vertical_diffusion_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/stokes_drift_velocity">
+		<rdfs:label>stokes_drift_velocity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/viscous_stress">
+		<rdfs:label>viscous_stress</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/turbulent_kinetic_energy">
+		<rdfs:label>turbulent_kinetic_energy</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/radiation_stress">
+		<rdfs:label>radiation_stress</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/molar_concentration">
+		<rdfs:label>molar_concentration</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/blowing_speed">
+		<rdfs:label>blowing_speed</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/energy-per-area_cold_content">
+		<rdfs:label>energy-per-area_cold_content</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/thermal_conductance">
+		<rdfs:label>thermal_conductance</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/degree-day-temperature">
+		<rdfs:label>degree-day-temperature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/cold_content">
+		<rdfs:label>cold_content</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/degree-day_coefficient">
+		<rdfs:label>degree-day_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/degree-day_threshold_temperature">
+		<rdfs:label>degree-day_threshold_temperature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/initial_depth">
+		<rdfs:label>initial_depth</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/initial_liquid-equivalent_depth">
+		<rdfs:label>initial_liquid-equivalent_depth</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/thermal_quality">
+		<rdfs:label>thermal_quality</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/indentation_hardness">
+		<rdfs:label>indentation_hardness</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/freeze_depth">
+		<rdfs:label>freeze_depth</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mass-per_volume_bulk_density">
+		<rdfs:label>mass-per_volume_bulk_density</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/reference_depth_temperature">
+		<rdfs:label>reference_depth_temperature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/specific_permeability">
+		<rdfs:label>specific_permeability</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/temperature_reference_depth">
+		<rdfs:label>temperature_reference_depth</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/thaw_depth">
+		<rdfs:label>thaw_depth</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/hydraulic_conductivity">
+		<rdfs:label>hydraulic_conductivity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/void_ratio">
+		<rdfs:label>void_ratio</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/oven-dried_mass_fraction">
+		<rdfs:label>oven-dried_mass_fraction</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/cutoff_depth">
+		<rdfs:label>cutoff_depth</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/horizontal_saturated_hydraulic_conductivity">
+		<rdfs:label>horizontal_saturated_hydraulic_conductivity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/vertical_saturated_hydraulic_conductivity">
+		<rdfs:label>vertical_saturated_hydraulic_conductivity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/infiltration_volume_flux">
+		<rdfs:label>infiltration_volume_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/infiltration_mass_flux">
+		<rdfs:label>infiltration_mass_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/potential_infiltration_volume_flux">
+		<rdfs:label>potential_infiltration_volume_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/air-dried_pressure_head">
+		<rdfs:label>air-dried_pressure_head</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/atterberg_activity_index">
+		<rdfs:label>atterberg_activity_index</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/atterberg_liquid_limit_volume_fraction">
+		<rdfs:label>atterberg_liquid_limit_volume_fraction</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/atterberg_liquidity_index">
+		<rdfs:label>atterberg_liquidity_index</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/atterberg_plastic_limit_volume_fraction">
+		<rdfs:label>atterberg_plastic_limit_volume_fraction</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/atterberg_plasticity_index">
+		<rdfs:label>atterberg_plasticity_index</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/atterberg_shrinkage_limit_volume_fraction">
+		<rdfs:label>atterberg_shrinkage_limit_volume_fraction</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/brooks-corey-smith_c_parameter">
+		<rdfs:label>brooks-corey-smith_c_parameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/brooks-corey-smith_pressure_head_offset_parameter">
+		<rdfs:label>brooks-corey-smith_pressure_head_offset_parameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/brooks-corey_b_parameter">
+		<rdfs:label>brooks-corey_b_parameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/brooks-corey_eta_parameter">
+		<rdfs:label>brooks-corey_eta_parameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/brooks-corey_lambda_parameter">
+		<rdfs:label>brooks-corey_lambda_parameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/bubbling_pressure_head">
+		<rdfs:label>bubbling_pressure_head</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/diffusivity">
+		<rdfs:label>diffusivity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/effective_hydraulic_conductivity">
+		<rdfs:label>effective_hydraulic_conductivity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/effective_saturated_hydraulic_conductivity">
+		<rdfs:label>effective_saturated_hydraulic_conductivity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/field-capacity_pressure_head">
+		<rdfs:label>field-capacity_pressure_head</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/field-capacity_volume_fraction">
+		<rdfs:label>field-capacity_volume_fraction</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/green-ampt_capillary_length">
+		<rdfs:label>green-ampt_capillary_length</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/hygroscopic_pressure_head">
+		<rdfs:label>hygroscopic_pressure_head</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/hygroscopic_volume_fraction">
+		<rdfs:label>hygroscopic_volume_fraction</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/initial_hydraulic_conductivity">
+		<rdfs:label>initial_hydraulic_conductivity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/initial_normalized_volume_fraction">
+		<rdfs:label>initial_normalized_volume_fraction</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/initial_volume_fraction">
+		<rdfs:label>initial_volume_fraction</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/normalized_hydraulic_conductivity">
+		<rdfs:label>normalized_hydraulic_conductivity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/normalized_volume_fraction">
+		<rdfs:label>normalized_volume_fraction</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/oven-dried_pressure_head">
+		<rdfs:label>oven-dried_pressure_head</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/philip_sorptivity">
+		<rdfs:label>philip_sorptivity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/pressure_head_reference_depth">
+		<rdfs:label>pressure_head_reference_depth</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/reference_depth_pressure_head">
+		<rdfs:label>reference_depth_pressure_head</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/relative_hydraulic_conductivity">
+		<rdfs:label>relative_hydraulic_conductivity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/residual_volume_fraction">
+		<rdfs:label>residual_volume_fraction</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/saturated_volume_fraction">
+		<rdfs:label>saturated_volume_fraction</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/smith-parlange_gamma_parameter">
+		<rdfs:label>smith-parlange_gamma_parameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/van-genuchten_alpha_parameter">
+		<rdfs:label>van-genuchten_alpha_parameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/van-genuchten_m_parameter">
+		<rdfs:label>van-genuchten_m_parameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/van-genuchten_n_parameter">
+		<rdfs:label>van-genuchten_n_parameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/van_genuchten_alpha_parameter">
+		<rdfs:label>van_genuchten_alpha_parameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/wilting-point_pressure_head">
+		<rdfs:label>wilting-point_pressure_head</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/wilting-point_volume_fraction">
+		<rdfs:label>wilting-point_volume_fraction</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/darcy_velocity">
+		<rdfs:label>darcy_velocity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/recharge_volume_flux">
+		<rdfs:label>recharge_volume_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/offset_depth">
+		<rdfs:label>offset_depth</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/recharge_mass_flux">
+		<rdfs:label>recharge_mass_flux</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/isochoric_heat_capacity">
+		<rdfs:label>isochoric_heat_capacity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/hooke_law_coefficient">
+		<rdfs:label>hooke_law_coefficient</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/tolman_oppenheimer_volkoff_limit_mass">
+		<rdfs:label>tolman_oppenheimer_volkoff_limit_mass</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/chandrasekhar_limit_mass">
+		<rdfs:label>chandrasekhar_limit_mass</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/protection_factor">
+		<rdfs:label>protection_factor</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/blue-book-price">
+		<rdfs:label>blue-book-price</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/motor-trend-magazine-safety_rating">
+		<rdfs:label>motor-trend-magazine-safety_rating</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/cosmic_background_radiation_frequency">
+		<rdfs:label>cosmic_background_radiation_frequency</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/inclination_angle">
+		<rdfs:label>inclination_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/incubation_period">
+		<rdfs:label>incubation_period</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/boiling_point_temperature">
+		<rdfs:label>boiling_point_temperature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/freezing_point_temperature">
+		<rdfs:label>freezing_point_temperature</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/gibbs_free_energy">
+		<rdfs:label>gibbs_free_energy</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mole-specific_latent_fusion_heat">
+		<rdfs:label>mole-specific_latent_fusion_heat</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mole-specific_latent_sublimation_heat">
+		<rdfs:label>mole-specific_latent_sublimation_heat</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/mole-specific_latent_vaporization_heat">
+		<rdfs:label>mole-specific_latent_vaporization_heat</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/viscosity">
+		<rdfs:label>viscosity</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/hydrogen_number">
+		<rdfs:label>hydrogen_number</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/actual_bond_angle">
+		<rdfs:label>actual_bond_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/ideal_bond_angle">
+		<rdfs:label>ideal_bond_angle</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/bond_dissociation_energy">
+		<rdfs:label>bond_dissociation_energy</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/settling_speed">
+		<rdfs:label>settling_speed</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/dive_duration">
+		<rdfs:label>dive_duration</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/antoine_vapor_pressure_a_parameter">
+		<rdfs:label>antoine_vapor_pressure_a_parameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/antoine_vapor_pressure_b_parameter">
+		<rdfs:label>antoine_vapor_pressure_b_parameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/antoine_vapor_pressure_c_parameter">
+		<rdfs:label>antoine_vapor_pressure_c_parameter</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/vapor_pressure">
+		<rdfs:label>vapor_pressure</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/surface_tension">
+		<rdfs:label>surface_tension</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/relative_molecular_mass_ratio">
+		<rdfs:label>relative_molecular_mass_ratio</rdfs:label>
+	</Quantity>
+	<Quantity rdf:about="http://mmisw.org/ont/csdms/quantity/crest_factor">
+		<rdfs:label>crest_factor</rdfs:label>
+	</Quantity>
+</rdf:RDF>

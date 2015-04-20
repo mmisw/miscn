@@ -1,0 +1,38 @@
+[
+    "output_file_info",
+    {
+        "file_name": "csdms_operator.owl"
+    }
+]
+[
+    "header_substitutions",
+    {
+        "xmlns=": "\"http://mmisw.org/ont/csdms/operator/\"",
+        "<omv:keywords>standard names, csdms": ", operator",
+        "xml:base=": "\"http://mmisw.org/ont/csdms/operator\"",
+        "<owl:Class rdf:about=\"": "http://mmisw.org/ont/csdms/operator/Operator",
+        "<omv:uri>": "http://mmisw.org/ont/csdms/operator",
+        "<omvmmi:hasResourceType>": "constraint",
+        "<rdfs:comment>": "The operator part of a CSDMS object name.",
+        "<omv:acronym>": "csdms-operator",
+        "<dc:description>": "The Operator (or Operation) terms from the CSDMS project, represented as an OWL resource. An Operation can optionally be given as a prefix to the quantity part of an existing standard name. Operations are applied to the quantity part of the name instead of to the entire name (object + quantity). Applying an operation to a quantity results in a new quantity that frequently has different units than the original quantity. The CSDMS semantic work has a goal of automated semantic mediation, matching or reconciliation. While the focus is on a 'lingua franca', the standard names are often built from a hierarchical set of concepts, and may eventually be used to construct a type of ontology.",
+        "<rdfs:label>": "operator",
+        "<omv:description>": "The Operator (or Operation) terms from the CSDMS project, represented as an OWL resource. An Operation can optionally be given as a prefix to the quantity part of an existing standard name. Operations are applied to the quantity part of the name instead of to the entire name (object + quantity). Applying an operation to a quantity results in a new quantity that frequently has different units than the original quantity. The CSDMS semantic work has a goal of automated semantic mediation, matching or reconciliation. While the focus is on a 'lingua franca', the standard names are often built from a hierarchical set of concepts, and may eventually be used to construct a type of ontology.",
+        "<!-- ": "Operators",
+        "<omv:name>": "CSDMS Operator Terms"
+    }
+]
+[
+    "limit_tags",
+    {
+        "closeTag": "</geo:Operator>",
+        "openTag": "<geo:Operator"
+    }
+]
+[
+    "body_substitutions",
+    {
+        "</geo:Operator>": "</Operator>",
+        "<geo:Operator rdf:ID=\"operator_": "<Operator rdf:about=\"http://mmisw.org/ont/csdms/operator/"
+    }
+]
